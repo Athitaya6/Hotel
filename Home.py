@@ -24,7 +24,7 @@ st.markdown("")
 
 import pandas as pd
 
-dt=pd.read_csv('./data/iris.csv')
+dt=pd.read_xlsx('data/CleanHotel.xlsx')
 st.write(dt.head(10))
 
 dt1 = dt['petal.length'].sum()
