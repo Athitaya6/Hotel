@@ -95,13 +95,13 @@ if st.button("ทำนายผล"):
     out=DTT_model.predict(x_input)
 
     if out[0]=="Not_Canceled":    
-        st.image("./pic/iris1.jpg")
+        st.image("./image/1.jpg")
         st.header("Not_Canceled")
     elif out[0]=="Canceled":
-        st.image("./pic/iris2.jpg")
+        st.image("./image/2.jpg")
         st.header("Canceled")
     else:
-        st.image("./pic/iris3.jpg") 
+        st.image("./image/2.jpg") 
         st.header("Canceled") 
     st.button("ไม่ทำนาย")
 else:
