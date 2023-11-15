@@ -88,21 +88,21 @@ if st.button("ทำนายผล"):
     DTT_model.fit(X, y)
 
 #ข้อมูลสำหรับทดลองจำแนกข้อมูล
-    x_input = np.array([[ptlen, ptwd, splen, spwd]])
+    x_input = np.array([hadults, hchildren, hweekend, hweek, hcar, htime, hmonth, hdate, hspecial])
 
 #เอา input ไปทดสอบ
     st.write(DTT_model.predict(x_input))
     out=DTT_model.predict(x_input)
 
-    if out[0]=="Setosa":    
+    if out[0]=="Not_Canceled":    
         st.image("./pic/iris1.jpg")
-        st.header("Setosa")
-    elif out[0]=="Versicolor":
+        st.header("Not_Canceled")
+    elif out[0]=="Canceled":
         st.image("./pic/iris2.jpg")
-        st.header("Versicolor")
+        st.header("Canceled")
     else:
         st.image("./pic/iris3.jpg") 
-        st.header("Versicolor") 
+        st.header("Canceled") 
     st.button("ไม่ทำนาย")
 else:
     st.button("ไม่ทำนาย")
