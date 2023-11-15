@@ -63,18 +63,23 @@ html_2 = """
 st.markdown(html_2, unsafe_allow_html=True)
 st.markdown("")
 
-ptlen = st.slider("จำนวนผู้ใหญ่ no adults",0,10)
-ptwd = st.slider("จำนวนเด็ก no children",0,10)
+hadults = st.slider("จำนวนผู้ใหญ่ no adults",0,10)
+hchildren = st.slider("จำนวนเด็ก no children",0,10)
+hweekend = st.slider("วันเสาร์-อาทิตย์ weekend ss",0,2)
+hweek = st.slider("วันจันทร์-ศุกร์ week mf",0,2)
+hcar = st.slider("ที่จอดรถ car parking",0,1)
 
-splen = st.number_input("กรุณาเลือกข้อมูล sepal.length")
-spwd = st.number_input("กรุณาเลือกข้อมูล sepal.width")
+htime = st.number_input("จำนวนวันตั้งแต่จอง leadtime")
+hmonth = st.number_input("เดือนที่จอง arrival month")
+hdate = st.number_input("วันที่จอง arrival date")
+hspecial = st.number_input("คำขอพิเศษ special requests")
 
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
 import numpy as np
 
 if st.button("ทำนายผล"):
     #ทำนาย
-    #dt = pd.read_csv("./data/iris.csv") 
+    #dt = pd.read_csv("data/CleanHotel.csv") 
     X = dt.drop('variety', axis=1)
     y = dt.variety 
     st.button("ไม่ทำนายผล")
@@ -86,8 +91,8 @@ if st.button("ทำนายผล"):
     x_input = np.array([[ptlen, ptwd, splen, spwd]])
 
 #เอา input ไปทดสอบ
-    st.write(Knn_model.predict(x_input))
-    out=Knn_model.predict(x_input)
+    st.write(DTT_model.predict(x_input))
+    out=DTT_model.predict(x_input)
 
     if out[0]=="Setosa":    
         st.image("./pic/iris1.jpg")
