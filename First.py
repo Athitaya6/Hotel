@@ -21,7 +21,7 @@ lottie_Welcome = load_lottieurl(lottie_url_Welcome)
 st_lottie(lottie_hello, key="hello")
 
 if st.button("Welcome"):
-    with st_lottie_spinner(lottie_download, key="Welcome"):
+    with st_lottie_spinner(lottie_url_Welcome, key="Welcome"):
         time.sleep(5)
     st.balloons()
     
