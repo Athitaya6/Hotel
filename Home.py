@@ -66,7 +66,7 @@ st.markdown("")
 hadults = st.slider("จำนวนผู้ใหญ่ no adults",0,10)
 hchildren = st.slider("จำนวนเด็ก no children",0,10)
 hweekend = st.slider("วันเสาร์-อาทิตย์ weekend ss",0,2)
-hweek = st.slider("วันจันทร์-ศุกร์ week mf",0,2)
+hweek = st.slider("วันจันทร์-ศุกร์ week mf",0,5)
 hcar = st.slider("ที่จอดรถ car parking",0,1)
 
 htime = st.number_input("จำนวนวันตั้งแต่จอง leadtime")
@@ -80,8 +80,8 @@ import numpy as np
 if st.button("ทำนายผล"):
     #ทำนาย
     dt = pd.read_csv("data/CleanHotel.csv") 
-    X = dt.drop('variety', axis=1)
-    y = dt.variety 
+    #X = dt.drop('variety', axis=1)
+    #y = dt.variety 
     st.button("ไม่ทำนายผล")
 
     DTT_model = DecisionTreeClassifier (criterion='gini')
