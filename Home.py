@@ -80,8 +80,8 @@ import numpy as np
 if st.button("ทำนายผล"):
     #ทำนาย
     dt = pd.read_csv("data/CleanHotel.csv") 
-    #X = dt.drop('variety', axis=1)
-    #y = dt.variety 
+    X = dt.drop('variety', axis=1)
+    y = dt.variety 
     st.button("ไม่ทำนายผล")
 
     DTT_model = DecisionTreeClassifier (criterion='gini')
