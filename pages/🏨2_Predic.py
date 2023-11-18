@@ -24,7 +24,7 @@ st.markdown("")
 
 import pandas as pd
 
-dt=pd.read_csv('.\data\MinMax.csv')
+dt=pd.read_csv('\data\MinMax.csv')
 st.write(dt.head(10))
 
 dt1 = dt['no adults'].sum()
@@ -79,7 +79,7 @@ import numpy as np
 
 if st.button("ทำนายผล"):
     #ทำนาย
-    dt = pd.read_csv(".\data\MinMax.csv") 
+    dt = pd.read_csv("\data\MinMax.csv") 
     X = dt.drop('variety', axis=1)
     y = dt.variety 
     st.button("ไม่ทำนายผล")
