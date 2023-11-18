@@ -5,13 +5,6 @@ import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_lottie import st_lottie_spinner
-from streamlit_option_menu import option_menu
-
-with st.sidebar:
-    selected = option_menu(
-        menu_title= "Main Menu",
-        option=["Home","Prediction"]
-    )
 
 def load_lottieurl(url: str):
     r = requests.get(url)
