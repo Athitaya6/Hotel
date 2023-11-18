@@ -74,7 +74,6 @@ hmonth = st.number_input("เดือนที่จอง arrival month")
 hdate = st.number_input("วันที่จอง arrival date")
 hspecial = st.number_input("คำขอพิเศษ special requests")
 
-textip = st.text_input("ที่จอดรถ")
 
 from sklearn.tree import DecisionTreeClassifier
 import numpy as np
