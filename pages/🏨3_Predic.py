@@ -4,22 +4,14 @@ st.markdown(
    f"""
    <h1 style= 'text-align: center;'>ระบบวิเคราะห์พฤติกรรมการจองโรงแรมของลูกค้า</h1>
    """,
-   
-   f"""
-   <h2 style= 'text-align: center;'>นางสาวอฑิตยา กะการดี</h2>
-   """,
-   
-   f"""
-   <h3 style= 'text-align: center;'>สาขาวิทยาการข้อมูล</h3>
-   """,
    unsafe_allow_html=True
 )
   
 st.markdown("----")
 
 col1, col2 = st.columns(2)
-#col1.write("This is column 1")
-#col2.write("This is column 2")
+col1.write("นางสาวอฑิตยา กะการดี")
+col2.write("สาขาวิทยาการข้อมูล")
 with col1:
     st.image('./image/Aa.jpg')
 with col2:
