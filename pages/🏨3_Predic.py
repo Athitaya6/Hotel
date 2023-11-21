@@ -2,7 +2,7 @@ import streamlit as st
 
 st.markdown(
    f"""
-   <h1 style= 'text-align: center;'>ระบบวิเคราะห์พฤติกรรมการจองโรงแรมของลูกค้า</h1>
+   <h1 style= 'text-align: center;'>ระบบวิเคราะห์พฤติกรรม /n การจองโรงแรมของลูกค้า</h1>
    """,
    unsafe_allow_html=True
 )
