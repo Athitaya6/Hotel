@@ -1,7 +1,7 @@
 import streamlit as st 
 
 cols = st.columns(1)
-with cols[0]:
+with center[0]:
    st.title('พฤติกรรมการจองโรงแรมของลูกค้า')  
    st.header('นางสาวอฑิตยา กะการดี')
    st.subheader('สาขาวิทยาการข้อมูล')
