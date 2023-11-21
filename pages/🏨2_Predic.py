@@ -24,7 +24,7 @@ st.markdown("")
 
 import pandas as pd
 
-dt=pd.read_csv('./data/MinMax.csv')
+dt=pd.read_csv('./data/CleanHotel.csv')
 st.write(dt.head(10))
 
 dt1 = dt['no adults'].sum()
@@ -80,7 +80,7 @@ import numpy as np
 
 if st.button("ทำนายผล"):
     #ทำนาย
-    dt = pd.read_csv('./data/MinMax.csv') 
+    dt = pd.read_csv('./data/CleanHotel.csv') 
     X = dt.drop('booking_status', axis=1)
     y = dt.booking_status 
     st.button("ไม่ทำนายผล")
