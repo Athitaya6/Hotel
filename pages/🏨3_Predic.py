@@ -13,7 +13,7 @@ col1, col2 = st.columns(2)
 col1.write("นางสาวอฑิตยา กะการดี")
 col2.write("สาขาวิทยาการข้อมูล")
 with col1:
-    st.image('./image/Aa.jpg')
+    st.image('./image/athitaya.jpg')
 with col2:
     st.image('./image/ds.jpg')
     
