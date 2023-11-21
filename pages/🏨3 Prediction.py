@@ -4,13 +4,16 @@ st.markdown(
    f"""
    <h1 style= 'text-align: center;'>ระบบวิเคราะห์พฤติกรรมการจองโรงแรมของลูกค้า</h1>
    """,
-   
+   unsafe_allow_html=True
+)
+
+st.markdown(
    f"""
    <h2 style= 'text-align: center;'>นางสาวอฑิตยา กะการดี</h2>
    """,
    unsafe_allow_html=True
 )
- 
+
 st.markdown("----")
 
 col1, col2 = st.columns(2)
