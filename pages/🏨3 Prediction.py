@@ -72,16 +72,16 @@ html_2 = """
 st.markdown(html_2, unsafe_allow_html=True)
 st.markdown("")
 
-hadults = st.slider("จำนวนผู้ใหญ่ no adults",0,10)
-hchildren = st.slider("จำนวนเด็ก no children",0,10)
-hweekend = st.slider("วันเสาร์-อาทิตย์ weekend ss",0,2)
-hweek = st.slider("วันจันทร์-ศุกร์ week mf",0,5)
-hcar = st.slider("car parking",0,1)
+hadults = st.slider("จำนวนผู้ใหญ่ No adults",0,10)
+hchildren = st.slider("จำนวนเด็ก No children",0,10)
+hweekend = st.slider("วันเสาร์-อาทิตย์ Saturday-Sunday",0,2)
+hweek = st.slider("วันจันทร์-ศุกร์ Monday-Friday",0,5)
+hcar = st.slider("ต้องการที่จอดรถหรือไม่ Car parking",0,1)
 
-htime = st.number_input("จำนวนวันตั้งแต่จอง leadtime")
-hmonth = st.number_input("เดือนที่จอง arrival month")
-hdate = st.number_input("วันที่จอง arrival date")
-hspecial = st.number_input("คำขอพิเศษ special requests")
+htime = st.text_input("จำนวนวันตั้งแต่จอง Leadtime")
+hmonth = st.text_input("เดือนที่จอง Arrival month")
+hdate = st.text_input("วันที่จอง Arrival date")
+hspecial = st.text_input("คำขอพิเศษ Special requests")
 
 
 from sklearn.tree import DecisionTreeClassifier
