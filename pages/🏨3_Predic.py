@@ -2,14 +2,19 @@ import streamlit as st
 
 st.markdown(
    f"""
-   <h1 style= 'text-align: center;'>ระบบวิเคราะห์พฤติกรรม
-   การจองโรงแรมของลูกค้า</h1>
+   <h1 style= 'text-align: center;'>ระบบวิเคราะห์พฤติกรรมการจองโรงแรมของลูกค้า</h1>
+   """,
+   
+   f"""
+   <h2 style= 'text-align: center;'>นางสาวอฑิตยา กะการดี</h2>
+   """,
+   
+   f"""
+   <h3 style= 'text-align: center;'>สาขาวิทยาการข้อมูล</h3>
    """,
    unsafe_allow_html=True
 )
-
-st.header('นางสาวอฑิตยา กะการดี')
-st.subheader('สาขาวิทยาการข้อมูล')   
+  
 st.markdown("----")
 
 col1, col2 = st.columns(2)
