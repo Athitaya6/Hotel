@@ -33,7 +33,7 @@ with col2:
 
 html_1="""
 <div style="background-color:#63D767;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>การจองโรงแรม</h5></center>
+<center><h5>ชุดข้อมูลการจองโรงแรม</h5></center>
 </div>
 """    
 st.markdown(html_1, unsafe_allow_html=True)
