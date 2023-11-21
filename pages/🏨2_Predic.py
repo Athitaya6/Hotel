@@ -89,7 +89,7 @@ if st.button("ทำนายผล"):
     DTT_model.fit(X, y)
 
 #ข้อมูลสำหรับทดลองจำแนกข้อมูล
-    x_input = np.array([hadults, hchildren, hweekend, hweek, hcar, htime, hmonth, hdate, hspecial])
+    x_input = np.array([[hadults, hchildren, hweekend, hweek, hcar, htime, hmonth, hdate, hspecial]])
 
     st.write(x_input)
 #เอา input ไปทดสอบ
