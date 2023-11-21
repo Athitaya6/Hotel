@@ -59,7 +59,7 @@ hadults = st.slider("จำนวนผู้ใหญ่ no adults",0,10)
 hchildren = st.slider("จำนวนเด็ก no children",0,10)
 hweekend = st.slider("วันเสาร์-อาทิตย์ weekend ss",0,2)
 hweek = st.slider("วันจันทร์-ศุกร์ week mf",0,5)
-hcar = st.slider.selectbox('car parking',('Yes','NO'))
+hcar = st.slider.selectbox('car parking',('0','1'))
 
 htime = st.number_input("จำนวนวันตั้งแต่จอง leadtime")
 hmonth = st.number_input("เดือนที่จอง arrival month")
