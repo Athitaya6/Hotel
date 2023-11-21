@@ -24,4 +24,11 @@ if st.button("Welcome"):
     with st_lottie_spinner(lottie_url_Welcome, key="Welcome"):
         time.sleep(5)
     st.balloons()
+
+st.markdown(
+   f"""
+   <h1 style= 'text-align: center;'>Hello, welcome to the system to analyze customer hotel booking behavior. </h1>
+   """,
+   unsafe_allow_html=True
+) 
     
