@@ -39,7 +39,7 @@ dt9 = dt['special requests'].sum()
 dt10 = dt['booking_status'].sum()
 
 dx = [dt1, dt2, dt3, dt4, dt5, dt6, dt7, dt8, dt9, dt10]
-dx2 = pd.DataFrame(dx, index=["d1", "d2", "d3", "d4", "dt5", "dt6", "dt7", "dt8", "dt9", "dt10"])
+dx2 = pd.DataFrame(dx, index=["dt1", "dt2", "dt3", "dt4", "dt5", "dt6", "dt7", "dt8", "dt9", "dt10"])
 if st.button("show bar chart"):
    st.bar_chart(dx2)
    st.button("Not show bar chart")
