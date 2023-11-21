@@ -1,5 +1,4 @@
 import streamlit as st 
-uploaded_file = st.sidebar.
 
 st.title('พฤติกรรมการจองโรงแรมของลูกค้า')  
 st.header('นางสาวอฑิตยา กะการดี')
