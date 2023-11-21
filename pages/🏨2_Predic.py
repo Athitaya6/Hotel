@@ -90,22 +90,21 @@ if st.button("ทำนายผล"):
 
 #ข้อมูลสำหรับทดลองจำแนกข้อมูล
     x_input = np.array([[hadults, hchildren, hweekend, hweek, hcar, htime, hmonth, hdate, hspecial]])
-
-    st.write(x_input)
+    #st.write(x_input)
 #เอา input ไปทดสอบ
-    #st.write(DTT_model.predict(x_input))
-    #out=DTT_model.predict(x_input)
+    st.write(DTT_model.predict(x_input))
+    out=DTT_model.predict(x_input)
 
-    #if out[0]=="Not_Canceled":    
-        #st.image("./image/1.jpg")
-        #st.header("Not_Canceled")
-    #elif out[0]=="Canceled":
-        #st.image("./image/2.jpg")
-        #st.header("Canceled")
-    #else:
-        #st.image("./image/2.jpg") 
-        #st.header("Canceled") 
-    #st.button("ไม่ทำนาย")
+    if out[0]=="Not_Canceled":    
+        st.image("./image/1.jpg")
+        st.header("Not_Canceled")
+    elif out[0]=="Canceled":
+        st.image("./image/2.jpg")
+        st.header("Canceled")
+    else:
+        st.image("./image/2.jpg") 
+        st.header("Canceled") 
+    st.button("ไม่ทำนาย")
 else:
     st.button("ไม่ทำนาย")
     
