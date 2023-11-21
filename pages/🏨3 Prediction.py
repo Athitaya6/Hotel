@@ -14,11 +14,17 @@ st.markdown(
    unsafe_allow_html=True
 )
 
+st.markdown(
+   f"""
+   <h3 style= 'text-align: center;'>สาขาวิทยาการข้อมูล</h>
+   """,
+   unsafe_allow_html=True
+)
 st.markdown("----")
 
 col1, col2 = st.columns(2)
 #col1.write("นางสาวอฑิตยา กะการดี")
-col2.write("สาขาวิทยาการข้อมูล")
+#col2.write("สาขาวิทยาการข้อมูล")
 with col1:
     st.image('./image/123.jpg')
 with col2:
