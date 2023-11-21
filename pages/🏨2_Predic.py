@@ -6,12 +6,12 @@ st.subheader('สาขาวิทยาการข้อมูล')
 st.markdown("----")
 
 col1, col2 = st.columns(2)
-#col1.write("This is column 1")
-#col2.write("This is column 2")
-#with col1:
-    #st.image('./pic/k1.jpg')
-#with col2:
-    #st.image('./pic/iris.jpg')
+col1.write("This is column 1")
+col2.write("This is column 2")
+with col1:
+    st.image('./image/1.jpg')
+with col2:
+    st.image('./image/2.jpg')
     
 
 html_1="""
@@ -81,8 +81,8 @@ import numpy as np
 if st.button("ทำนายผล"):
     #ทำนาย
     dt = pd.read_csv('./data/MinMax.csv') 
-    X = dt.drop('variety', axis=1)
-    y = dt.variety 
+    X = dt.drop('booking_status', axis=1)
+    y = dt.booking_status 
     st.button("ไม่ทำนายผล")
 
     DTT_model = DecisionTreeClassifier (criterion='gini')
