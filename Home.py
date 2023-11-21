@@ -15,7 +15,7 @@ def load_lottieurl(url: str):
 lottie_url_hello = "https://lottie.host/4d8c2000-072b-467d-873c-9343cd137fa6/6utFz2fXUu.json"
 #lottie_url_Welcome = "https://lottie.host/290016a6-d650-4a32-85c7-4d77b0a892ca/4rNL8XZeZt.json"
 lottie_hello = load_lottieurl(lottie_url_hello)
-lottie_Welcome = load_lottieurl(lottie_url_Welcome)
+#lottie_Welcome = load_lottieurl(lottie_url_Welcome)
 
 
 st_lottie(lottie_hello, key="hello")
