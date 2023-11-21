@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Hotel.py
+web: sh setup.sh && streamlit run ▶First◀.py
