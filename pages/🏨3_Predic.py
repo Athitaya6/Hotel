@@ -79,7 +79,7 @@ if st.button("ทำนายผล"):
 
     DTT_model = DecisionTreeClassifier (criterion='gini')
     DTT_model.fit(X, y)
-    st.write(X.shape)
+    #st.write(X.shape)
 #ข้อมูลสำหรับทดลองจำแนกข้อมูล
     x_input = np.array([[hadults, hchildren, hweekend, hweek, hcar, htime, hmonth, hdate, hspecial]])
     #st.write(x_input)
