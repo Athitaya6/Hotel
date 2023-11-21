@@ -1,6 +1,12 @@
 import streamlit as st 
 
-st.title('ระบบวิเคราะห์พฤติกรรมการจองโรงแรมของลูกค้า')  
+st.markdown(
+   f"""
+   <h1 style= 'text-align: center;'>ระบบวิเคราะห์พฤติกรรมการจองโรงแรมของลูกค้า</h1>
+   """,
+   unsafe_allow_html=True
+)
+
 st.header('นางสาวอฑิตยา กะการดี')
 st.subheader('สาขาวิทยาการข้อมูล')   
 st.markdown("----")
