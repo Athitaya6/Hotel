@@ -101,6 +101,7 @@ if st.button("ทำนายผล"):
     x_input = np.array([[hadults, hchildren, hweekend, hweek, hcar, htime, hmonth, hdate, hspecial]])
     #st.write(x_input)
 #เอา input ไปทดสอบ
+
     st.write(DTT_model.predict(x_input))
     out=DTT_model.predict(x_input)
 
