@@ -77,7 +77,7 @@ hchildren = st.slider("จำนวนเด็ก No children",0,10)
 hweekend = st.slider("วันเสาร์-อาทิตย์ Saturday-Sunday",0,2)
 hweek = st.slider("วันจันทร์-ศุกร์ Monday-Friday",0,5)
 
-hcar = st.stext_input("ต้องการที่จอดรถหรือไม่ (หากต้องการใส่เลข1) Car parking")
+hcar = st.stext_input("ต้องการที่จอดรถหรือไม่ /หากต้องการใส่เลข1 Car parking")
 htime = st.text_input("จำนวนวันตั้งแต่จอง Leadtime")
 hmonth = st.text_input("เดือนที่จอง Arrival month")
 hdate = st.text_input("วันที่จอง Arrival date")
