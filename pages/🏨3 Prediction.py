@@ -108,7 +108,7 @@ if st.button("ทำนายผล"):
     if out[0]=="Not_Canceled":    
         st.image("./image/1.jpg")
         st.header("Not_Canceled")
-    elif out[0]=="Canceled":
+    elif out[1]=="Canceled":
         st.image("./image/2.jpg")
         st.header("Canceled")
     #else:
