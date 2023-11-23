@@ -112,8 +112,8 @@ if st.button("ทำนายผล"):
         st.image("./image/2.jpg")
         st.header("Canceled")
     else:
-        st.image("./image/2.jpg") 
-        st.header("Canceled") 
+        st.image("./image/1.jpg") 
+        st.header("Not_Canceled") 
     st.button("ไม่ทำนาย")
 else:
     st.button("ไม่ทำนาย")
